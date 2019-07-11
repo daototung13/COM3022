@@ -68,14 +68,56 @@ header.bg-common {
   font-weight: 500;
   padding: 10px 20px 10px 0;
 }
+.pl-10 {
+  padding-left: 10px;
+}
 
-.news-heading > div {
+.pr-10 {
+  padding-right:10px;
+}
+
+.news-items {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.news-lists {
+  margin-top: 10px;
+}
+
+.news-title {
+  margin-top: 20px;
+}
+.news-items::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
   background: #029902;
+  position: absolute;
+  left: 1px;
+  top: 12px;
+}
+.news-heading > div {
   font-size: 24px;
   color: white;
   padding: 11px 20px;
+  margin: 10px 0px;
 }
 
+.news-heading {
+  position: relative;
+}
+
+.heading {
+  position: absolute;
+  top: 0px;
+  width: 1%;
+  left: 459px;
+  background: #ffffff;
+  height: 50px;
+}
 .news-heading > div > h2 {
   font-size: 24px;
   color: white;
@@ -123,6 +165,15 @@ header {
 footer {
   background: #029902;
   height: 178px;
+  margin-top: 50px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-right: 10px;
 }
 
 main.wrapper {
